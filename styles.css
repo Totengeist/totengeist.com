@@ -1,0 +1,154 @@
+@charset "utf-8";
+/* CSS Document */
+
+:root {
+    --alignment: center;
+    --border-radius-bl: 2.125rem;
+    --border-radius-br: 2.125rem;
+    --border-radius-tl: 2.125rem;
+    --border-radius-tr: 2.125rem;
+    --padding-horizontal: 2rem;
+    --padding-vertical: 1.5rem;
+    --spacing: 2.5rem;
+    --width: 37rem;
+    --avatar-color: #6c360a;
+    --text-color-primary: white;
+    --text-color-secondary: white;
+    --background-color-primary: #494949;
+    --background-color-secondary: #7C7A7A;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    color: var(--text-color-primary);
+}
+html {
+    font: 100%/1.95 'Nunito Sans';
+    background-color: var(--background-color-secondary);
+}
+body {
+    font-weight: 400;
+    font-size: 16px;
+    font-kerning: normal;
+    font-feature-settingss: "kern", "liga", "clig", "calt";
+}
+
+.container {
+    border-radius: var(--border-radius-tl) var(--border-radius-tr) var(--border-radius-br) var(--border-radius-bl);
+    max-width: 100%;
+    position: relative;
+    width: var(--width);
+    z-index: 1;
+    padding: var(--padding-vertical) var(--padding-horizontal);
+    background-color: var(--background-color-primary);
+}
+.wrapper {
+    align-items: center;
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+    justify-content: center;
+    max-width: 100%;
+    min-height: 90vh;
+    position: relative;
+    text-align: var(--alignment);
+    z-index: 1;
+    background-color: transparent;
+    border-radius: var(--border-radius-tl) var(--border-radius-tr) var(--border-radius-br) var(--border-radius-bl);
+    transform: perspective(1000px) rotateX(0deg);
+    transform-origin: 50% 50%;
+    transition: opacity 1s ease 0s,transform 1s ease 0s;
+    margin: 2rem;
+}
+
+footer {
+    margin: var(--spacing) 0 0;
+    text-align: center;
+}
+footer .ko-fi {
+    background: url('https://uploads-ssl.webflow.com/5c14e387dab576fe667689cf/5ca5bf1dff3c03fbf7cc9b3c_Kofi_logo_RGB_rounded-p-500.png');
+    background-size: contain;
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    margin: -.1em;
+}
+a {
+    color: #631547;
+}
+p {
+    margin: 0.9em 0 0;
+}
+h1 {
+    font: 3rem/1.4 'Nunito Sans';
+    font-weight: 700;
+}
+h2 {
+    color: black;
+    text-align: center;
+    font: 1.8rem/1.4 'Nunito Sans';
+    font-weight: 700;
+}
+h2 em {
+    text-decoration: underline;
+    font-style: normal;
+    border-bottom: 1px solid;
+}
+h4 {
+    font-weight: 600;
+    font-size: 1.4em;
+}
+.me h2.blurb {
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+section {
+    margin: var(--spacing) 0;
+}
+
+ul, ol {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.me .avatar {
+    background: center / contain no-repeat url('img/avatar.jpg');
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    border: 2px solid var(--background-color-secondary);
+    margin: var(--spacing) auto;
+    box-shadow: inset 0px 0px 10px 10px var(--avatar-color);
+}
+
+.name, .blurb {
+    margin: var(--spacing) 0;
+}
+
+.blurb {
+    font-size: 1.8rem;
+    color: var(--text-color-secondary);
+    font-weight: 300;
+    line-height:1.4;
+    text-transform: uppercase;
+}
+
+.socials i.fa-brands {
+    font-size: 3em;
+    padding: 0.5em 0.25em;
+}
+
+.socials i.fas {
+    font-size: 3em;
+    padding: 0.5em 0.25em;
+}
+
+.socials i.kofi::after {
+      content: '\f004';
+      font-weight: 900;
+      font-size: 0.4em;
+      color: var(--background-color-primary);
+      position: absolute;
+      margin: 1.2em 0 0 -2.04em;
+}
