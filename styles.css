@@ -99,7 +99,7 @@ h4 {
     font-weight: 600;
     font-size: 1.4em;
 }
-.me h2.blurb {
+.me h2.blurb, .mycomms h2.blurb {
     font-weight: 500;
     font-size: 1.25rem;
 }
@@ -151,4 +151,12 @@ ul, ol {
       color: var(--background-color-primary);
       position: absolute;
       margin: 1.2em 0 0 -2.04em;
+}
+
+.mycomms {
+    text-align: left;
+}
+
+.mycomms a {
+    color: #d3d3d3;
 }
